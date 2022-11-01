@@ -1,0 +1,206 @@
+char_health = int (5)
+char_strength = int (5)
+spi_health = int (5)
+spi_strength = int (5)
+
+a = str(input("Hello, adventurer! You're entering an extremely dangerous Spider cave!!\n"
+       "Here you can became a hero, or die. Do you brave enough to continue?\n"
+       "If you do, do you want to move [Right]? [Left]? [Ahead]? "))
+if (a == "Right"):
+    char_strength = char_strength + 5
+    print ("You've found a sword! Congratulations!\n"
+           "Your strength is increasing!\n"
+           "You're looking for another adventures and going ahead.\n"
+           "Oh no! You see a horrible spider in front of you!\n"
+           "Are you ready to fight?")
+    b = str(input("[YES] or [NO] "))
+    if (b == "NO"):
+        print ("You've escaped. You're safe. But your purpose isn't achieved, is it?")
+    if (b == "YES"):
+        print ("Start fighting!")
+        while char_health != 0 and spi_health != 0:
+            if char_strength > spi_strength:
+                spi_health = spi_health - 3
+                print ("Spider's damage is 3")
+                if spi_health <= 0:
+                    print ("Spider dies. You win! Take your treasure!")
+                    break
+                if char_health <= 0:
+                    print ("You die")
+                    break
+            if char_strength < spi_strength:
+                char_health = char_health - 3
+                print ("Your damage is 3")
+                if spi_health <= 0:
+                    print ("Spider dies. You win! Take your treasure!")
+                    break
+                if char_health <= 0:
+                    print ("You die")
+                    break
+            if char_strength == spi_strength:
+                while (char_health != 0 or spi_strength != 0):
+                    char_health = char_health - 2
+                    spi_health = spi_health - 2
+                    print("Your damage is 2\n"
+                          "Spider's damage is 2")
+                    if char_health <= 0 and spi_health <= 0:
+                        print("Sorry, you both die")
+                        break
+                    if spi_health <= 0:
+                        print("You win! Take your treasure!")
+                        break
+                    if char_health <= 0:
+                        print("You die")
+                        break
+                break
+    if (b != "YES" and b != "NO"):
+        print ("Something's wrong")
+
+if (a == "Left"):
+    print ("Oh no! You see a horrible spider in front of you!\n"
+           "Are you ready to fight?")
+    b = str(input("[YES] or [NO] "))
+    if (b == "NO"):
+        print ("You've escaped. You're safe. But your purpose isn't achieved, is it?")
+    if (b == "YES"):
+        print ("Start fighting!")
+        while char_health != 0 and spi_health != 0:
+            if char_strength > spi_strength:
+                spi_health = spi_health - 3
+                print ("Spider's damage is 3")
+                if spi_health <= 0:
+                    print ("Spider dies. You win! Take your treasure!")
+                    break
+                if char_health <= 0:
+                    print ("You die")
+                    break
+            if char_strength < spi_strength:
+                char_health = char_health - 3
+                print ("Your damage is 3")
+                if spi_health <= 0:
+                    print ("Spider dies. You win! Take your treasure!")
+                    break
+                if char_health <= 0:
+                    print ("You die")
+                    break
+            if char_strength == spi_strength:
+                while (char_health != 0 or spi_strength != 0):
+                    char_health = char_health - 2
+                    spi_health = spi_health - 2
+                    print("Your damage is 2\n"
+                          "Spider's damage is 2")
+                    if char_health <= 0 and spi_health <= 0:
+                        print("Sorry, you both die")
+                        break
+                    if spi_health <= 0:
+                        print("You win! Take your treasure!")
+                        break
+                    if char_health <= 0:
+                        print("You die")
+                        break
+                break
+    if (b != "YES" and b != "NO"):
+        print ("Something's wrong")
+
+if (a == "Ahead"):
+    char_health = char_health + 7
+    print ("You've found a health potion! Your health is increasing!\n")
+    c = str(input("Now you have to choose direction again [Left] [Right] or [Ahead] "))
+    if (c == "Left"):
+        char_strength = char_strength + 5
+        print("You've found a sword! Congratulations!\n"
+              "Your strength is increasing!\n"
+              "You're looking for another adventures and going ahead.\n"
+              "Oh no! You see a horrible spider in front of you!\n"
+              "Are you ready to fight?")
+        d = str(input("[YES] or [NO] "))
+        if (d == "NO"):
+            print("You've escaped. You're safe. But your purpose isn't achieved, is it?")
+        if (d == "YES"):
+            print("Start fighting!")
+            while char_health != 0 and spi_health != 0:
+                if char_strength > spi_strength:
+                    spi_health = spi_health - 3
+                    print("Spider's damage is 3")
+                    if spi_health <= 0:
+                        print("Spider dies. You win! Take your treasure!")
+                        break
+                    if char_health <= 0:
+                        print("You die")
+                        break
+                if char_strength < spi_strength:
+                    char_health = char_health - 3
+                    print("Your damage is 3")
+                    if spi_health <= 0:
+                        print("Spider dies. You win! Take your treasure!")
+                        break
+                    if char_health <= 0:
+                        print("You die")
+                        break
+                if char_strength == spi_strength:
+                    while (char_health != 0 or spi_strength != 0):
+                        char_health = char_health - 2
+                        spi_health = spi_health - 2
+                        print("Your damage is 2\n"
+                        "Spider's damage is 2")
+                        if char_health <= 0 and spi_health <= 0:
+                            print("Sorry, you both die")
+                            break
+                        if spi_health <= 0:
+                            print("You win! Take your treasure!")
+                            break
+                        if char_health <= 0:
+                            print("You die")
+                            break
+                    break
+        if (d != "YES" and b != "NO"):
+            print("Something's wrong")
+
+    if (c == "Right"):
+        print("Oh no! You see a horrible spider in front of you!\n"
+              "Are you ready to fight?")
+        b = str(input("[YES] or [NO] "))
+        if (b == "NO"):
+            print("You've escaped. You're safe. But your purpose isn't achieved, is it?")
+        if (b == "YES"):
+            print("Start fighting!")
+            while char_health != 0 and spi_health != 0:
+                if char_strength > spi_strength:
+                    spi_health = spi_health - 3
+                    print("Spider's damage is 3")
+                    if spi_health <= 0:
+                        print("Spider dies. You win! Take your treasure!")
+                        break
+                    if char_health <= 0:
+                        print("You die")
+                        break
+                if char_strength < spi_strength:
+                    char_health = char_health - 3
+                    print("Your damage is 3")
+                    if spi_health <= 0:
+                        print("Spider dies. You win! Take your treasure!")
+                        break
+                    if char_health <= 0:
+                        print("You die")
+                        break
+                if char_strength == spi_strength:
+                    while (char_health != 0 or spi_strength != 0):
+                        char_health = char_health - 2
+                        spi_health = spi_health - 2
+                        print("Your damage is 2\n"
+                        "Spider's damage is 2")
+                        if char_health <= 0 and spi_health <= 0:
+                            print("Sorry, you both die")
+                            break
+                        if spi_health <= 0:
+                            print("You win! Take your treasure!")
+                            break
+                        if char_health <= 0:
+                            print("You die")
+                            break
+                    break
+        if (b != "YES" and b != "NO"):
+            print("Something's wrong")
+
+    if (c == "Ahead"):
+        print ("You've found the exit. You've survived, but you've got no treasure. Try again")
