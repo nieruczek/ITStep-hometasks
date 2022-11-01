@@ -1,0 +1,91 @@
+import random
+
+try:
+    print("Hello there! \'Rock, paper,scissors\'")
+    print("The game will go against the computer")
+    print("Use big letters to select: ")
+    print("[R] - rock")
+    print("[S] - scissors")
+    print("[P] - paper")
+    print("[L] - lizard")
+    print("[SP] - Spock")
+
+    user_score = 0
+    user_choice = 0
+    bot_score = 0
+    bot_choice = 0
+    user_win = 0
+    bot_win = 0
+
+    def information():
+          print("Player's score: ", user_score)
+          print("Bot's score: ", bot_score)
+
+    while True:
+          print("GAME STARTS")
+          for i in range(3):
+                print("ROUND ", str(i + 1))
+                bot_choice = random.choice(["R", "S", "P", "L", "SP"])
+                user_choice = input("Your choice: ")
+                print("You: ", user_choice, " and Bot: ", bot_choice)
+                if user_choice == bot_choice:
+                      print("Draw")
+                elif user_choice == "R":
+                      if bot_choice == "S" or bot_choice == "L":
+                            user_score += 1
+                            a = information()
+                      elif bot_choice == "P" or bot_choice == "SP":
+                            bot_score = bot_score + 1
+                            a = information()
+                elif user_choice == "S":
+                      if bot_choice == "P" or bot_choice == "L":
+                            user_score = user_score + 1
+                            a = information()
+                      elif bot_choice == "R" or bot_choice == "SP":
+                            bot_score = bot_score + 1
+                            a = information()
+                elif user_choice == "P":
+                      if bot_choice == "R" or bot_choice == "SP":
+                            user_score = user_score + 1
+                            a = information()
+                      elif bot_choice == "S" or bot_choice == "L":
+                            bot_score = bot_score + 1
+                            a = information()
+                elif user_choice == "L":
+                      if bot_choice == "P" or bot_choice == "SP":
+                            user_score = user_score + 1
+                            a = information()
+                      elif bot_choice == "S" or bot_choice == "R":
+                            bot_score = bot_score + 1
+                            a = information()
+                elif user_choice == "SP":
+                      if bot_choice == "S" or bot_choice == "R":
+                            user_score = user_score + 1
+                            a = information()
+                      elif bot_choice == "L" or bot_choice == "P":
+                            bot_score = bot_score + 1
+                            a = information()
+                else:
+                      print("ERROR")
+
+          if user_score > bot_score:
+                print("YOU WIN. Your score: ", user_score)
+                user_win += 1
+          elif user_score < bot_score:
+                print("BOT WINS. Bot's score: ", bot_score)
+                bot_win += 1
+          elif user_score == bot_score:
+                print("DRAW")
+
+          a = (input("Do you want to play again?: [Y], [N]"))
+          if a == "Y":
+                user_score = 0
+                bot_score = 0
+                continue
+          else:
+                print("You won ", user_win, " times")
+                print("Bot won ", bot_win, " times")
+                break
+
+except:
+    print("ERROR")
