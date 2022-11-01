@@ -1,6 +1,6 @@
 # ITStep-hometasks
 
-#HOMEWORK_01
+#___01
 
 OK, that's my first home work for ITStep Academy Python course.
 
