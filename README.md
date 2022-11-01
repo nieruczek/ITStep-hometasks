@@ -49,3 +49,7 @@ Work with lists and tuples. Don't ask what's happening here :speak_no_evil:
 #___09
 
 Try to input Ukrainian politicians' name to see how this code works
+
+#___10
+
+Math functions in Python
