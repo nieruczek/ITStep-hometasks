@@ -1,0 +1,20 @@
+a = {1: "Arestovich", 2: "Kim", 3: "Arestovich", 4: "Zelenskiy", 5: "Podoliak", 6: "Arestovich", 7: "Zelenskiy", 8: "Zaluzhniy"}
+b = (input("Please, input name: "))
+j = 0
+
+def discount(j):
+
+    for i in a.values():
+        if i == b:
+            j = j + 1
+    return j
+
+discount(j)
+
+
+if discount(j) >= 3:
+    print("Client has discount: 10%")
+elif discount(j)<3 and discount(j)>0:
+    print("There is no discount.")
+else:
+    print("There wasn't this visitor.")
