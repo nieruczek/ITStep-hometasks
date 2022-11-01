@@ -1,0 +1,72 @@
+import random 
+
+cards = [6, 7, 8, 9, 10, 2, 3, 4, 11] * 4
+random.shuffle(cards)
+
+print("Let's play BlackJack!")
+count = 0
+count_bot = 0
+
+while True:
+    choice = input("Take card? y/n\n")
+    if choice == "y":
+        current = cards.pop()
+        current_bot = cards.pop()
+        print ("You take ", current)
+        print ("Bot takes ", current_bot)
+        count += current
+        count_bot += current_bot
+        if count > 21:
+            print("You lose. You have ", count)
+            if count_bot == 21:
+                print("Bot wins! Bot's score: ", count_bot)
+            elif count_bot != 21:
+                print("Bot's score: ", count_bot)
+            a = (input("Do you want to play again? y/n\n"))
+            if a == "y":
+                count = 0
+                count_bot = 0
+                continue
+            else:
+                print ("Good luck! See you again!")
+                break
+        elif count_bot > 21:
+            print("Bot lose. It has ", count_bot)
+            print("Your score: ", count)
+            a = (input("Do you want to play again? y/n\n"))
+            if a == "y":
+                count = 0
+                count_bot = 0
+                continue
+            else:
+                print("Good luck! See you again!")
+                break
+        elif count == 21:
+            print("You win. You have ", count)
+            print("Bot's score: ", count_bot)
+            a = (input("Do you want to play again? y/n\n"))
+            if a == "y":
+                count = 0
+                count_bot = 0
+                continue
+            else:
+                print("Good luck! See you again!")
+                break
+        elif count_bot == 21:
+            print ("Bot wins. It has ", count_bot)
+            print("Your score: ", count)
+            a = (input("Do you want to play again? y/n\n"))
+            if a == "y":
+                count = 0
+                count_bot = 0
+                continue
+            else:
+                print("Good luck! See you again!")
+                break
+        else:
+            print("Your score: ", count)
+            print("Bot's score: ", count_bot)
+    elif choice == "n":
+        print ("Count: ", count)
+        print("Count: ", count)
+        break
