@@ -1,0 +1,20 @@
+#__________TASK_1_____________
+targariens = ["Rhaenyra", 'Dayeneris', 'Viserys', "Daemon"]
+print(targariens)
+a = targariens.pop(0)
+b = targariens.pop()
+targariens.insert(0, b)
+targariens.insert(3, a)
+print(targariens)
+
+#2_________TASK_2________________
+city = ["Ivano", "+", "Frankivsk"]
+city.insert(1, "-")
+city.remove("+")
+print(city[0]+city[1]+city[2])
+
+#3________TASK_3_________________
+mlist = [1, 2.4, "b", "Coffee", True, ["cat", "dog"]]
+for i in mlist:
+    a = type(i)
+    print(a)
