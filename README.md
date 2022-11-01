@@ -27,3 +27,11 @@ STONE, SCISSORS, PAPER, LIZARD, SPOK
 
 If you miss BigBangTheory you can use this text game to feel you one of its characters.
 Whom do you want to play against? :scroll::snake::new_moon::scissors::bust_in_silhouette:
+
+#___06
+
+Task 1. You can't do anything. Just watch Targariens shuffled.
+
+Task 2. And beautiful Ukrainian city Ivano-Frankivsk concatenated.
+
+Task 3. And that's all about data types
