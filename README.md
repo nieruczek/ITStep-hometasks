@@ -35,3 +35,9 @@ Task 1. You can't do anything. Just watch Targariens shuffled.
 Task 2. And beautiful Ukrainian city Ivano-Frankivsk concatenated.
 
 Task 3. And that's all about data types
+
+#___07
+
+My first real code with opportunity to create a real application.
+
+But apparently for UPD :ok:
