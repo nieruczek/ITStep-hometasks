@@ -1,0 +1,19 @@
+n = int(input("Please, input any integer: "))
+
+def number(n):
+    a = n + n**2 + n**3
+    return print("The number you need is ", a)
+
+number(n)
+#_______________________________________________________________________________________
+
+b = int(input("Please, input ant integer: "))
+c = int(input("Please, input any integer. It should be more than previous: "))
+
+def number2(b, c):
+    for i in range (b, c+1):
+        if i%2 == 0:
+            print(i)
+    return i
+
+number2(b, c)
