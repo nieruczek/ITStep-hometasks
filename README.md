@@ -23,5 +23,7 @@ Miles/yards/inches converter. Still be careful about latters size
 
 #___05
 
+STONE, SCISSORS, PAPER, LIZARD, SPOK
+
 If you miss BigBangTheory you can use this text game to feel you one of its characters.
 Whom do you want to play against? :scroll::snake::new_moon::scissors::bust_in_silhouette:
