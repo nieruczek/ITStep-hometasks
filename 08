@@ -1,0 +1,63 @@
+#TASK 1 _________________________________________________________________________________________________________
+a = ('a', 'd', 6, 9, 15, 'i', 'b')                          
+b = ('a', 'b', 'c', 'e', 'f', 'g', 'i', 15)
+c = (1, 'g', 6, 74, 'b', 'a', 8, 15)
+g = []
+
+for d in range(len(a)):
+    for e in range(len(b)):
+        for f in range(len(c)):
+            if a[d] == b[e] and a[d] == c[f]:
+                g.append(a[d])
+                break
+print(g)
+print("")
+
+#TASK 2________________________________________________________________________________________________________________
+list1 = ('Слава Україні!', 1, 2, 6)
+list2 = ('Слава нації!', 1, 2, 6)
+list3 = ('Триндець російській федерації!', 1, 2, 6)
+list4 = []
+
+for h in range(len(list1)):
+    for j in range(len(list2)):
+        for k in range(len(list3)):
+            if list1[h] != list2[j] and list1[h] != list3[k]:
+                list4.append(list1[h])
+                break
+        break
+    break
+
+for j in range(len(list2)):
+    for h in range(len(list1)):
+        for k in range(len(list3)):
+            if list2[j] != list1[h] and list2[j] != list3[k]:
+                list4.append(list2[j])
+                break
+        break
+    break
+
+for k in range(len(list3)):
+    for j in range(len(list2)):
+        for h in range(len(list1)):
+            if list3[k] != list2[j] and list3[k] != list1[h]:
+                list4.append(list3[k])
+                break
+        break
+    break
+print(list4)
+print("")
+
+#TASK 3_________________________________________________________________________________________________________________
+tuple1 = (1, 2, 3, 4, 12, 24, 56, 8)
+tuple2 = (1, 2, 8, 0, 12, 15)
+tuple3 = (1, 2, 15, 9, 12, 8, 78, 92)
+reason = []
+
+for l in range(len(tuple1)):
+    for m in range(len(tuple2)):
+        for n in range(len(tuple3)):
+            if tuple1[l] == tuple2[m] and tuple1[l] == tuple3[n] and l == m and l == n:
+                reason.append(tuple1[l])
+                break
+print(reason)
