@@ -1,0 +1,26 @@
+#____________TASK_1____________________________
+try:
+    a = int (input("What hour is it? "))
+    if a > 5 and a < 22:
+        print("It's a DAY")
+    else:
+        print("It's a NIGHT")
+except:
+    print("ERROR. Check the data type")
+    
+ #__________TASK_2______________________________
+ try:
+    a = float(input("Please, input your height (cm): "))
+    b = int(input("Please, input 1, if you're a man: \nInput 2, if you're a woman: \nAny another number if you're not sure about your gender: "))
+    c = float()
+
+    if b == 1:
+        c = (a - 100)*1.15
+        print("Your ideal weight is ", round (c,1))
+    elif b == 2:
+        c = (a - 110)*1.15
+        print("Your ideal weight is ", round (c, 1))
+    else:
+        print("Ideal is just a social construct. Don't mind and live your extra life")
+except:
+    print("ERROR!")
