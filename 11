@@ -1,0 +1,48 @@
+#_____________TASK_1____________
+a = input("Please, input any text: \n")
+
+def numbers(a):
+    b = list(a)
+    c = []
+    for i in b:
+        if i == "a" or i == "e" or i == "i" or i == "o" or i == "u" or i == "y":
+            c.append(i)
+    return print("The number of vowvels is: ", len(c))
+
+numbers(a)
+
+#___________TASK_2_______________
+a = input("Please, input any 6-sign number: \n")
+
+def numbers(a):
+    if len(a) == 6:
+        b = list(a)
+        c = [int(i) for i in b]
+        d = (c[0] + c[1] + c[2])
+        e = (c[3] + c[4] + c[5])
+        if d == e:
+            print("It's happy number!")
+        else:
+            print("That's NOT happy number!")
+    else:
+        print("Something wrong! Try else!")
+
+numbers(a)
+
+#___________TASK_3__________________
+text = '"Don\'t let the noise of others\' opinions drown out your own inner voice."'
+author = "Steve Jobs"
+
+def formatation(text):
+    b = []
+    a = text.split(" ")
+    while len(a) != 0:
+        b.append(a[0:7])
+        del a[0:7]
+    for i in b:
+        print(" "*30, " ".join(i))
+    print(" "*45, author)
+
+    return
+
+formatation(text)
