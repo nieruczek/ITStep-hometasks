@@ -1,0 +1,16 @@
+try:
+    a = float(input("Please, enter how many meters you need? \n"))
+    b = (input("Do you want to know [MILES], [INCHES], [YARDS]? \n"))
+    if b == "MILES":
+        c = a/1602
+    elif b =="INCHES":
+        c = 100/2.54*a
+    elif b =="YARDS":
+        c = a/0.9144
+    c = c.__round__(2)
+    if c%1 == 0:
+        c = int(c)
+    print (c)
+    
+except:
+    print("ERROR")
