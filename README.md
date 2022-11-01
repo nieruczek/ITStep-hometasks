@@ -53,3 +53,7 @@ Try to input Ukrainian politicians' name to see how this code works
 #___10
 
 Math functions in Python
+
+#___11
+
+That's too boring
