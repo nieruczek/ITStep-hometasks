@@ -12,3 +12,7 @@ Also it's able to tell you about your ideal weight. Cringe topic, I know :dizzy_
 
 That's a text game. To play it you have to be really attentive to the format of the data 
 you input. Especially upper- and lowercase letters
+
+#___03
+
+And one more game. Be careful about upper- and lowercase letters you input again
