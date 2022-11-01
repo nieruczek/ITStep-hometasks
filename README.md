@@ -41,3 +41,7 @@ Task 3. And that's all about data types
 My first real code with opportunity to create a real application.
 
 But apparently for UPD :ok:
+
+#___08
+
+Work with lists and tuples. Don't ask what's happening here :speak_no_evil:
