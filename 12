@@ -1,0 +1,27 @@
+from easygui import *
+
+class Iteration:
+
+    def __init__(self, max):
+        self.max = max
+
+    def simple(self, max):
+        my_list = []
+        number = 2
+        divider = 2
+        if number == divider:
+            my_list.append(number)
+
+        while number <= max:
+            if number % divider != 0:
+                divider += 1
+                if number == divider:
+                    my_list.append(number)
+            else:
+                divider = 2
+                number += 1
+            continue
+        return print(my_list)
+
+iter = Iteration(0)
+iter.simple(max=int(enterbox("Input your maximum")))
