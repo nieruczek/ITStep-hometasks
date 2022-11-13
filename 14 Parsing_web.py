@@ -9,8 +9,6 @@ agent_007 = webdriver.Chrome(executable_path="D:\\GALYA\\PythonProjects\\pythonP
 
 agent_007.get(url="https://www.ukr.net/")
 
-#a = agent_007.title
-
 wiki = agent_007.find_elements(By.CLASS_NAME, "feed__item--title")
 my_file = open(path, "w")
 
